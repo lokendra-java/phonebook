@@ -29,6 +29,8 @@ public class User {
     private String lastName;
     @Column(name="email",nullable = false,unique = true)
     private String email;
+    @Column(name = "mobile_no.",nullable = false,length = 12)
+    private String mobile;
     @Column(name = "password",nullable = false)
     private String password;
     @Column(name = "confirm_password",nullable = false)
